@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.naslov {
+  text-align: center;
+  color: white;
+}
+.hero-text .tagline {
+  font-size: 1.8rem; 
+  margin: 0 auto 20px;
+  color:white;
+  text-align: center;
+  padding-top:5vh;
+}
+.hero-text {
+  padding-top: 10vh;
+}
+/* header */
+header {
+    background: #222;
+    color: #f4f7f9;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #FF6B35;
+}
+nav a {
+    margin-left: 25px;
+    font-weight: 600;
+    color: #f4f7f9;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #FF6B35;
+}
+/* Hero sekcija */
+.hero {
+    width:100%;
+    height:80vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/projekt-gym/images/victor-freitas-Yuv-iwByVRQ-unsplash.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.stats-container {
+  width:100%;
+  height:20vh;
+  background-image:linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url("/projekt-gym//images/alora-griffiths-aVrZMPgN_Vg-unsplash.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+/* button za hero sekciju */
+.hero-buttons{
+  width:30vw;
+  height:20vh;
+  margin:0 auto;
+  margin-top:10vh;
+  
+} 
+/* za statistiku */
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  margin: 10px 20px;
+}
+
+.stat-item h3 {
+  font-size: 2rem;
+  color:#ff6b2d;
+}
+
+.stat-item p {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: white;
+}
+.btn-primary, .btn-secondary {
+  padding: 10px 20px;
+  margin: 0 8px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+.btn-primary {
+  background-color: #ff6b2d; 
+  color: white;
+}
+.btn-primary:hover {
+  background-color: #e55a1e;
+  transform: scale(1.02);
+}
+.btn-secondary {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+.btn-secondary:hover {
+  background-color: white;
+  color: #0e1629;
+  transform: scale(1.02);
+}
+/* Usluge / benefiti */
+.services {
+    background: #FF6B35;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+.services h2 {
+    margin-bottom: 40px;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.service-items {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.service-item {
+    flex: 1 1 280px;
+    font-size: 1.1rem;
+}
+.service-item h3 {
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.service-item:hover {
+    background-color: #222;
+    color: white;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+.service-item:nth-child(1):hover { box-shadow: 0 6px 15px rgba(255, 107, 107, 0.6); }
+.service-item:nth-child(2):hover { box-shadow: 0 6px 15px rgba(76, 175, 80, 0.6); }
+.service-item:nth-child(3):hover { box-shadow: 0 6px 15px rgba(33, 150, 243, 0.6); }
+
+/* planovi sekcija */
+.plans-section {
+  width:100%;
+  height:100vh;
+  padding-top:10vh;
+  font-family: Arial, sans-serif;
+  background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/projekt-gym//images/alexander-red-qo1pyCD02t4-unsplash.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.plan-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.plan-tabs button {
+  padding: 12px 25px;
+  border: 2px solid #FF6B35;
+  background: white;
+  color: #FF6B35;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.plan-tabs button:hover {
+  background-color: #FF6B35;
+  color: white;
+  transform: scale(1.02);
+}
+
+.plan-tabs button.active {
+  background-color: #FF6B35;
+  color: white;
+  cursor: default;
+}
+
+.plan-details {
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(58, 134, 255, 0.15);
+  color:white;
+}
+
+.plan-details img {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.plan-details h3 {
+  margin-top: 1.5vh;
+  font-size: 1.8rem;
+}
+
+.plan-details p {
+  font-size: 1.1rem;
+  text-align: center;
+  padding-top: 2vh;
+  max-width: 1000px; 
+  margin: 0 auto;   
+  line-height: 1.5; 
+}
+.plan-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #FF6B35;
+  margin: 8px 0 20px;
+  text-align: center;
+}
+/* Ikonice - raspored i stil */
+.plan-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.plan-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  color: #FF6B35;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: default;
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+.plan-icon svg {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+  fill: #FF6B35;
+}
+
+.plan-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 25px 10px;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+}
+/* Responsive */
+@media(max-width: 768px) {
+    .plans-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .plan-details {
+        max-width: 100%;
+    }
+    .plan-tabs {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+    .plan-tabs button {
+        flex: 1;
+        max-width: 120px;
+        padding: 12px 10px;
+        font-size: 0.9rem;
+    }
+    nav a {
+        margin-left: 15px;
+    }
+}
+/* scroll to top */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 15px;
+  right: 2px;
+  display: none; 
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #555;
+}
+/* contact forma */
+.contact-container {
+  max-width: 500px;
+  margin: 0.5px auto;
+  padding: 20px;
+  padding-top:3vh;
+  background:#222;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color:white;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color:white;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border: 1.8px solid #FF6B35;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+  border-color: #FF6B35;
+  outline: none;
+  box-shadow: 0 0 8px rgba(58, 134, 255, 0.3);
+}
+
+.contact-form button {
+  width: 100%;
+  background-color: #FF6B35;
+  color: #FF6B35;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #FF6B35;
+}
+.contact-container-1 {
+  background-color: #FF6B35;
+  width:100%;
+  height:85vh;
+}
+.footer-nav {
+  display: flex;
+  justify-content: center;
+}
+/*galerija*/
+.galerija-container{
+  width:100%;
+  height:141vh;
+  background-color: #222;
+  display: grid;
+  grid-template-columns:repeat(3,32.6vw);
+  grid-template-rows:repeat(2,70vh);
+  gap: 10px;
+}
+.galerija-container img {
+  width:100%;
+  height:70vh;
+  object-fit: cover;
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+.galerija-container img:hover {
+  transform: scale(1.01); 
+  z-index: 10; 
+  cursor: pointer; 
+}
+/*testimonial scroll*/
+.testimonial-glavni-container {
+  width: 100%;
+  height:60vh;
+  background-color: #FF6B35;
+}
+ .testimonial-glavni-2 {
+  width: 100%;
+  height:60vh;
+  background-color:white;
+  background-image:linear-gradient(rgba(0,0,0,0.10), rgba(0,0,0,0.8)), url("/projekt-gym//images//pexels-leonardho-1552252.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
+ }
+.testimonials-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  gap: 30px;
+  max-width: 1000px;
+  width: 100%;
+}
+.testimonial-text{
+  text-align: center;
+  color: white;
+}
+.scroll-btn {
+  background: #2980b9;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(41, 128, 185, 0.3);
+  transition: background 0.3s, transform 0.2s;
+  flex-shrink: 0;
+}
+.scroll-btn-2 {
+  background:#FF6B35;
+}
+.scroll-btn:hover {
+  background:#FF6B35;
+  transform: scale(1.08);
+}
+.scroll-btn:disabled {
+  background: #bdc3c7;
+  cursor: default;
+  transform: none;
+}
+
+.testimonials-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  flex-grow: 1;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+}
+.testimonials-container::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonial {
+  flex: 0 0 300px;
+  background: white;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: normal;
+  line-height: 1.6;
+  font-size: 1.05rem;
+  color: #34495e;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.testimonial:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial strong {
+  display: block;
+  margin-top: 15px;
+  font-weight: 700;
+  color: #2980b9;
+  font-size: 1rem;
+  text-align: right;
+}
+
+@media (max-width: 700px) {
+  .testimonial {
+    flex: 0 0 240px;
+    font-size: 0.95rem;
+  }
+  .scroll-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.6rem;
+  }
+}
+
+.o-autoru-container {
+  width:100%;
+  height:80vh;
+  background-color: #FF6B35;
+  display: grid;
+  grid-template-columns:55% 40%;
+}
+.slika-mene {
+  background-image: url("/projekt-gym/images/slika-mene.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:50%;
+}
+.tekst-o-meni {
+  font-size:1.4em;
+  text-align:center;
+  padding-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tekst-glavni {
+  padding-top: 5vh;
+  color: white;
+}
+.tekst-naslov {
+  color: white;
+}
+nav a.active {
+  color:#FF6B35;
+  font-weight: bold;
+  border-bottom: 2px solid orange; /* opcionalno */
+}
